@@ -7,7 +7,7 @@
 # @Software: PyCharm
 
 # import the module here
-import svm.svm_author_id
+import decision_tree.dt_author_id
 
 # then call the main function here
-svm.svm_author_id.svm_main()
+decision_tree.dt_author_id.dt_main()
