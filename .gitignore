@@ -7,3 +7,4 @@ migrations/
 logs/
 maildir/
 static/images/logo.png
+*.pyc
