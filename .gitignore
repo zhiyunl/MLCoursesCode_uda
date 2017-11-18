@@ -1,0 +1,9 @@
+# Python:
+*.so
+*.egg
+*.egg-info
+migrations/
+.idea/
+logs/
+maildir/
+static/images/logo.png
