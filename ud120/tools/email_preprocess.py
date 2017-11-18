@@ -3,7 +3,7 @@
 import os
 import pickle
 
-from sklearn import cross_validation
+from sklearn import model_selection
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_selection import SelectPercentile, f_classif
 
@@ -38,7 +38,9 @@ def preprocess(words_file=os.path.dirname(__file__) + "/../tools/word_data.pkl",
 
     ### test_size is the percentage of events assigned to the test set
     ### (remainder go into training)
-    features_train, features_test, labels_train, labels_test = cross_validation.train_test_split(word_data, authors, test_size=0.1, random_state=42)
+    features_train, features_test, labels_train, labels_test = model_selection.train_test_split(word_data, authors,
+                                                                                                test_size=0.1,
+                                                                                                random_state=42)
 
 
 

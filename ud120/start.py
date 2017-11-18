@@ -6,6 +6,8 @@
 # @File    : start.py
 # @Software: PyCharm
 
-import naive_bayes.nb_author_id
+# import the module here
+import svm.svm_author_id
 
-naive_bayes.nb_author_id.nb_main()
+# then call the main function here
+svm.svm_author_id.svm_main()
