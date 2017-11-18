@@ -44,7 +44,7 @@ def svm_main():
     clf = SVC(kernel='rbf', C=10000)
     t = time()
     clf.fit(features_train, labels_train)
-    print('trainning time is ', round(time() - t, 3), 's')
+    print('training time is ', round(time() - t, 3), 's')
 
     t = time()
     pred = clf.predict(features_test)
@@ -75,7 +75,7 @@ def svm_main():
     # clf = SVC(kernel='rbf', C=100)
     # t = time()
     # clf.fit(features_train, labels_train)
-    # print('trainning time is ', round(time() - t, 3), 's')
+    # print('training time is ', round(time() - t, 3), 's')
     #
     # t = time()
     # pred = clf.predict(features_test)

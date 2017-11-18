@@ -30,9 +30,9 @@ features_train, features_test, labels_train, labels_test = preprocess()
 def nb_main():
     clf = GaussianNB()
 
-    t = time();
+    t = time()
     clf.fit(features_train, labels_train)
-    print('trainning time is ', round(time() - t, 3), 's')
+    print('training time is ', round(time() - t, 3), 's')
 
     t = time()
     clf.predict(features_test)

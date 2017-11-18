@@ -55,7 +55,7 @@ def preprocess(words_file=os.path.dirname(__file__) + "/../tools/word_data.pkl",
     ### feature selection, because text is super high dimensional and 
     ### can be really computationally chewy as a result
     # percentile parameter controls the percent of features used to train
-    selector = SelectPercentile(f_classif, percentile=1)
+    selector = SelectPercentile(f_classif, percentile=10)
     selector.fit(features_train_transformed, labels_train)
     features_train_transformed = selector.transform(features_train_transformed).toarray()
     features_test_transformed  = selector.transform(features_test_transformed).toarray()

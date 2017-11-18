@@ -7,7 +7,7 @@
 # @Software: PyCharm
 
 # import the module here
-import decision_tree.dt_author_id
+import choose_your_own.your_algorithm
 
 # then call the main function here
-decision_tree.dt_author_id.dt_main()
+choose_your_own.your_algorithm.choose_main()
