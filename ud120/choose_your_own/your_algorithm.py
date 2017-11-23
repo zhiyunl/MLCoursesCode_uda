@@ -41,8 +41,13 @@ def choose_main():
 
     ## adaboost
     ## n_estimatos ranged from 13 to 24, both get a 0.928 accuracy
-    from choose_your_own.adaboost import ada_main
-    clf = ada_main()
+    # from choose_your_own.adaboost import ada_main
+    # clf = ada_main()
+
+    ## random forest
+    ## n_estimatos ranged from 41 to 49, with min_sample_leaf = 97 ,get a 0.944 accuracy
+    from choose_your_own.randomforest import rf_main
+    clf = rf_main()
 
     try:
         prettyPicture(clf, features_test, labels_test)
