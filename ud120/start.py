@@ -6,8 +6,10 @@
 # @File    : start.py
 # @Software: PyCharm
 
-# import the module here
-import choose_your_own.your_algorithm
+### import the module here
+# import choose_your_own.your_algorithm
+from datasets_questions import explore_enron_data
 
-# then call the main function here
-choose_your_own.your_algorithm.choose_main()
+### then call the main function here
+# choose_your_own.your_algorithm.choose_main()
+explore_enron_data.data_main()
