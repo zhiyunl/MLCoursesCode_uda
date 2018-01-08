@@ -6,10 +6,18 @@
 # @File    : start.py
 # @Software: PyCharm
 
-### import the module here
+#### lesson choose your own algorithm
+## import the module here
 # import choose_your_own.your_algorithm
-from datasets_questions import explore_enron_data
 
-### then call the main function here
+## then call the main function here
 # choose_your_own.your_algorithm.choose_main()
-explore_enron_data.data_main()
+
+#### lesson explore_enron_data
+# from datasets_questions import explore_enron_data
+# explore_enron_data.data_main()
+
+#### lesson 7: finance regression
+from regression.finance_regression import reg_main
+
+reg_main()
